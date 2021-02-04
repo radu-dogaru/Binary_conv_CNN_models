@@ -6,6 +6,11 @@ Inlcudes a model for MNIST giving an accuracy of 99.28%
 The convolutional layers used in Keras are defined as: 
 
 example for 2'nd layer: 
+==========================================================================================================
+model.add(DepthwiseConv2D(kernel_size=csize2, padding=pad, depth_multiplier=filtre2, use_bias=False))
+model.add(MaxPooling2D(pool_size=(psize2, psize2),strides=(str2,str2),padding=pad))
+===========================================================================================================
+
 (filtre1, filtre2, filtre3) are the numbers of filters per each of (1,2,3) conv. layers 
 
 csize=3 in all cases  (here csize2)
@@ -14,9 +19,7 @@ psize=4 in all cases  (here psize2)
 
 str=2 in all cases    (here str2) 
 
-model.add(DepthwiseConv2D(kernel_size=csize2, padding=pad, depth_multiplier=filtre2, use_bias=False))
-
-model.add(MaxPooling2D(pool_size=(psize2, psize2),strides=(str2,str2),padding=pad))
+pad='same' in all cases 
 
 
 The model was first described in the following paper 
