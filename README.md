@@ -7,8 +7,11 @@ The convolutional layers used in Keras are defined as:
 
 example for 2'nd layer: 
 ......................................................................................................
+
 model.add(DepthwiseConv2D(kernel_size=csize2, padding=pad, depth_multiplier=filtre2, use_bias=False))
+
 model.add(MaxPooling2D(pool_size=(psize2, psize2),strides=(str2,str2),padding=pad))
+
 ......................................................................................................
 
 (filtre1, filtre2, filtre3) are the numbers of filters per each of (1,2,3) conv. layers 
