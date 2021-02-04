@@ -4,7 +4,10 @@ Some CNN models where weights in the convolution layers are {-1,1} while weights
 Inlcudes a model for MNIST giving an accuracy of 99.28% 
 
 To evaluate the model click here 
-https://github.com/radu-dogaru/Binary_conv_CNN_models/blob/main/eval_model.ipynb
+<a href="https://colab.research.google.com/github/radu-dogaru/Binary_conv_CNN_models/blob/main/eval_model.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>   (model must be previously uploaded in File section)
+
 
 The convolutional layers used in Keras are defined as: 
 
